@@ -67,8 +67,8 @@ content:
     content:
       - layout: top-middle
         title: Docker Compose 기반 단일 서버 환경을 Docker Swarm 기반 이중 서버 클러스터로 마이그레이션
-        link: https://www.notion.so/Docker-Compose-Swarm-2283d7c5e50c8117b7b3cbcf29b6ee52
-        link_text: 관련 블로그 LINK
+        # link: https://www.notion.so/Docker-Compose-Swarm-2283d7c5e50c8117b7b3cbcf29b6ee52
+        # link_text: 관련 블로그 LINK
         quote: >
           H2o Korea
         description: | # this will include new lines to allow paragraphs
@@ -78,8 +78,8 @@ content:
           - <mark>폐쇄망 환경</mark> 내에서 사설 이미지 레지스트리(Nexus) 연동 및 서비스 자동화 배포 체계 구현
       - layout: top-middle
         title: 모니터링 시스템 통합 및 알림 시스템 구축
-        link: https://www.notion.so/2283d7c5e50c81698ea4df650fbc2569
-        link_text: 관련 블로그 LINK
+        # link: https://www.notion.so/2283d7c5e50c81698ea4df650fbc2569
+        # link_text: 관련 블로그 LINK
         quote: >
           H2o Korea
         description: | # this will include new lines to allow paragraphs

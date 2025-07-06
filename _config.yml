@@ -38,9 +38,13 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  효율적인 백엔드 시스템과 안정적인 인프라를 설계하고 최적화하는 데 노력하는 백엔드 개발자입니다.
+  성장에 대한 열정과 적극적인 문제 해결력을 바탕으로, 다양한 환경에서 실무 경험을 쌓아온 개발자입니다.
+  초기에는 개발 경험이 전무한 상태에서 시작했지만, <mark>빠른 학습력과 자기주도적 태도</mark>로 실무에 필요한 역량을 꾸준히 습득해왔습니다.
+  운영 자동화, 장애 대응, 모니터링 시스템 구축 등 <mark>서비스 신뢰성과 효율성 향상을 위한 개선에 집중</mark>해왔으며,
+  새로운 기술 도입과 팀 내 협업 체계 개선에도 적극적으로 기여하고 있습니다.
+  실제 경험을 바탕으로 팀원들과 지식과 노하우를 공유하며, 함께 성장하는 개발 문화를 만들어가는 데 힘쓰고 있습니다.
 content:
   - title: Experience
     layout: list
@@ -68,10 +72,10 @@ content:
         quote: >
           H2o Korea
         description: | # this will include new lines to allow paragraphs
-          - 서버 증설(1대 → 2대)에 맞춰 컨테이너 오케스트레이션 구조를 Docker Compose에서 Docker Swarm 클러스터로 전환하여, 서비스의 확장성과 고가용성을 확보
+          - 서버 증설(1대 → 2대)에 맞춰 컨테이너 오케스트레이션 구조를 <mark>Docker Compose에서 Docker Swarm 클러스터로 전환</mark>하여, 서비스의 확장성과 고가용성을 확보
           - Kubernetes와 Docker Swarm을 비교 분석하여, 제한된 서버 자원(2대) 환경에서 마스터/워커 역할 병행이 가능한 Docker Swarm을 선택함으로써 인프라 효율성 극대화
           - 서비스 무중단 배포, 자동 복구, 배포 실패 시 롤백 등의 컨테이너 운영 환경 구축
-          - 폐쇄망 환경 내에서 사설 이미지 레지스트리(Nexus) 연동 및 서비스 자동화 배포 체계 구현
+          - <mark>폐쇄망 환경</mark> 내에서 사설 이미지 레지스트리(Nexus) 연동 및 서비스 자동화 배포 체계 구현
       - layout: top-middle
         title: 모니터링 시스템 통합 및 알림 시스템 구축
         link: https://www.notion.so/2283d7c5e50c81698ea4df650fbc2569
@@ -79,11 +83,11 @@ content:
         quote: >
           H2o Korea
         description: | # this will include new lines to allow paragraphs
-          - 레거시 환경에서 파일 기반 로그 관리, ELK 스택 등 여러 모니터링 시스템이 혼재되어 있던 구조를, LGTM 스택(Grafana/Prometheus/Loki/Tempo) 기반의 통합 모니터링 환경으로 전환하여 운영 효율성 및 가시성 향상
+          - 레거시 환경에서 파일 기반 로그 관리, ELK 스택 등 <mark>여러 모니터링 시스템이 혼재되어 있던 구조</mark>를, LGTM 스택(Grafana/Prometheus/Loki/Tempo) 기반의 <mark>통합 모니터링 환경으로 전환</mark>하여 운영 효율성 및 가시성 향상
           - 기존 파일 기반 로그 관리는 검색·분석이 어렵고, ELK 스택은 높은 리소스 소모와 운영 복잡성이 있어 경량화, 운영 편의성을 고려해 Grafana LGTM 스택(Grafana, Loki, Tempo, Prometheus) 선택
           - 서비스 로그, DB exporter, Redis exporter 등 다양한 메트릭과 로그를 수집·통합하여 한 대시보드에서 시스템 상태, 성능, 분산 트레이스까지 통합 모니터링 가능하도록 개선
           - 특정 지표(CPU, 디스크 용량, HTTP 500 에러 등) 기반 이메일 알림 시스템을 구축하여 장애 발생 시 신속한 대응이 가능하도록 자동화
-          - 통합 모니터링 시스템 도입으로 운영 리소스 절감, 장애 대응 속도 및 서비스 신뢰성 대폭 향상
+          - 통합 모니터링 시스템 도입으로 운영 리소스 절감, 장애 대응 속도 및 서비스 신뢰성 향상
       - layout: top-middle
         title: DB 성능 개선 및 운영 효율 증대
         quote: >

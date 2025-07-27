@@ -40,9 +40,9 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  운영 자동화, 모니터링 통합, 인프라 전환 등 실무 중심의 성과를 보유한 백엔드 개발자입니다.
-  빠른 학습력과 문제 해결 중심 사고로 다양한 실서비스 환경에서 기술적 개선을 주도해왔습니다.
-  DevOps와 백엔드 개발의 경계를 넘나들며 생산성과 안정성 모두에 기여할 수 있습니다.
+  - 운영 자동화, 모니터링 통합, 인프라 전환 등 실무 중심의 성과를 보유한 백엔드 개발자입니다.
+  - 빠른 학습력과 문제 해결 중심 사고로 다양한 실서비스 환경에서 기술적 개선을 주도해왔습니다.
+  - DevOps와 백엔드 개발의 경계를 넘나들며 생산성과 안정성 모두에 기여할 수 있습니다.
 content:
   - title: Experience
     layout: list
@@ -64,11 +64,11 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Docker Compose 기반 단일 서버 환경을 Docker Swarm 기반 이중 서버 클러스터로 마이그레이션
         quote: >
-          H2o Korea
+          H2O KOREA
+        title: Docker-Compose → K8S 클러스터 전환
         description: | # this will include new lines to allow paragraphs
-          - 단일 서버 → K8S 클러스터 전환
+          - Docker-Compose 기반 설계에서 K8S 클러스터로 마이그레이션
           - 서비스 무중단 배포, 컨테이너 자동 복구, 롤백 등 오케스트레이션 구조 설계 및 운영
       - layout: left
         title: 모니터링 시스템 통합 (LGTM 스택 도입)
@@ -76,9 +76,6 @@ content:
           - 기존 파일 로그 + ELK 혼재 환경을 LGTM(Grafana, Loki, Tempo, Prometheus)으로 전환
           - DB/Redis exporter, 서비스 로그, 분산 트레이싱 등 다양한 메트릭을 단일 대시보드에 통합
           - CPU/디스크/에러코드 기반 이메일 알림 시스템 구축으로 대응 시간 단축
-          - 서비스 로그, DB exporter, Redis exporter 등 다양한 메트릭과 로그를 수집·통합하여 한 대시보드에서 시스템 상태, 성능, 분산 트레이스까지 통합 모니터링 가능하도록 개선
-          - 특정 지표(CPU, 디스크 용량, HTTP 500 에러 등) 기반 이메일 알림 시스템을 구축하여 장애 발생 시 신속한 대응이 가능하도록 자동화
-          - 통합 모니터링 시스템 도입으로 운영 리소스 절감, 장애 대응 속도 및 서비스 신뢰성 향상
       - layout: left
         title: 데이터베이스 운영 효율화
         description: |

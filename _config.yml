@@ -41,8 +41,8 @@ additional_links:
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   - 운영 자동화, 모니터링 통합, 인프라 전환 등 실무 중심의 성과를 보유한 백엔드 개발자입니다.
-  - 빠른 학습력과 문제 해결 중심 사고로 다양한 실서비스 환경에서 기술적 개선을 주도해왔습니다.
-  - DevOps와 백엔드 개발의 경계를 넘나들며 생산성과 안정성 모두에 기여할 수 있습니다.
+  - <mark>빠른 학습력과 문제 해결 중심 사고</mark>로 다양한 실서비스 환경에서 기술적 개선을 주도해왔습니다.
+  - DevOps와 백엔드 개발의 경계를 넘나들며 <mark>생산성과 안정성 모두에 기여</mark>할 수 있습니다.
 content:
   - title: Experience
     layout: list
@@ -67,7 +67,7 @@ content:
         quote: >
           H2O KOREA
       - layout: top-left
-        title: Docker-Composed -> K8S 클러스터 전환
+        title: Docker-Compose -> K8S 클러스터 전환
         description: | # this will include new lines to allow paragraphs
           - Docker-Compose 기반 설계에서 K8S 클러스터로 마이그레이션
           - 서비스 무중단 배포, 컨테이너 자동 복구, 롤백 등 오케스트레이션 구조 설계 및 운영
@@ -76,13 +76,25 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 기존 파일 로그 + ELK 혼재 환경을 LGTM(Grafana, Loki, Tempo, Prometheus)으로 전환
           - DB/Redis exporter, 서비스 로그, 분산 트레이싱 등 다양한 메트릭을 단일 대시보드에 통합
-          - CPU/디스크/에러코드 기반 이메일 알림 시스템 구축으로 대응 시간 단축
+          - CPU/디스크/에러코드 기반 이메일 알림 시스템 구축으로 <mark>대응 시간 30% 단축</mark>
       - layout: top-left
         title: 데이터베이스 운영 효율화
         description: |
          - 마이그레이션 도구 Flyway 도입, 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
          - Master-Slave 간 replication delay 이슈 분석 및 구조 개선
          - 느린 쿼리 Fetch Time 병목 분석 및 성능 개선 진행
+      - layout: top-left
+        title: S-REGI 서비스
+        description: |
+         - 호텔 체크인 전 사용자 정보 수집 및 약관 동의용 백엔드 개발
+         - WebSocket 기반 실시간 통신 설계
+         - JWT 인증·권한 관리
+      - layout: top-left
+        title: 호텔 통합 관리 서비스
+        description: |
+         - 호텔별 상이한 체크인 절차를 유연하게 처리할 수 있도록 모듈 설계 및 확장
+         - 컨시어지, 룸클리닝, 스마트체크인, CRM 등 신규 서비스 초기 개발
+         - 메시지 발송 시 ActiveMQ 기반 이벤트 발송 구조 설계 및 개발
       - layout: top-left
         title: 기타 DevOps 업무
         description: |

@@ -67,6 +67,18 @@ content:
         quote: >
           H2O KOREA
       - layout: top-left
+        title: S-REGI 서비스
+        description: |
+         - 호텔 체크인 전 사용자 정보 수집 및 약관 동의용 백엔드 개발
+         - WebSocket 기반 실시간 통신 설계
+         - JWT 인증·권한 관리
+      - layout: top-left
+        title: 호텔 통합 관리 서비스
+        description: |
+         - 호텔별 상이한 체크인 절차를 유연하게 처리할 수 있도록 모듈 설계 및 확장
+         - 컨시어지, 룸클리닝, 스마트체크인, CRM 등 신규 서비스 초기 개발
+         - 메시지 발송 시 ActiveMQ 기반 <mark>이벤트 발송 구조 설계 및 개발</mark>
+      - layout: top-left
         title: Docker-Compose -> K8S 클러스터 전환
         description: | # this will include new lines to allow paragraphs
           - Docker-Compose 기반 설계에서 K8S 클러스터로 마이그레이션
@@ -82,19 +94,7 @@ content:
         description: |
          - 마이그레이션 도구 Flyway 도입, 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
          - Master-Slave 간 replication delay 이슈 분석 및 구조 개선
-         - 느린 쿼리 Fetch Time 병목 분석 및 성능 개선 진행
-      - layout: top-left
-        title: S-REGI 서비스
-        description: |
-         - 호텔 체크인 전 사용자 정보 수집 및 약관 동의용 백엔드 개발
-         - WebSocket 기반 실시간 통신 설계
-         - JWT 인증·권한 관리
-      - layout: top-left
-        title: 호텔 통합 관리 서비스
-        description: |
-         - 호텔별 상이한 체크인 절차를 유연하게 처리할 수 있도록 모듈 설계 및 확장
-         - 컨시어지, 룸클리닝, 스마트체크인, CRM 등 신규 서비스 초기 개발
-         - 메시지 발송 시 ActiveMQ 기반 이벤트 발송 구조 설계 및 개발
+         - 느린 쿼리 Fetch Time <mark>병목 분석 및 성능 개선 진행</mark>
       - layout: top-left
         title: 기타 DevOps 업무
         description: |

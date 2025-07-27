@@ -65,7 +65,7 @@ content:
     content:
       - layout: top-left
         quote: >
-          H2O KOREA
+          <mark>H2O KOREA</mark>
       - layout: top-left
         title: S-REGI 서비스
         description: |
@@ -92,15 +92,22 @@ content:
       - layout: top-left
         title: 데이터베이스 운영 효율화
         description: |
-         - 마이그레이션 도구 Flyway 도입, 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
-         - Master-Slave 간 replication delay 이슈 분석 및 구조 개선
-         - 느린 쿼리 Fetch Time <mark>병목 분석 및 성능 개선 진행</mark>
+         - 마이그레이션 도구 [Flyway 도입](https://haneuls-blog.super.site/%ea%b0%9c%eb%b0%9c-%ec%a1%b0%ec%a7%81%ec%97%90-flyway%eb%a5%bc-%ec%99%9c-%eb%8f%84%ec%9e%85%ed%95%98%ea%b2%8c-%eb%90%98%ec%97%88%ec%9d%84%ea%b9%8c), 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
+         - Master-Slave 간 replication [delay 이슈 분석 및 구조 개선](https://haneuls-blog.super.site/db-masterslave-%ea%b0%84-%eb%8f%99%ea%b8%b0%ed%99%94-%ec%a7%80%ec%97%b0-%ec%9d%b4%ec%8a%88)
+         - [느린 쿼리 Fetch Time 병목 분석 및 성능 개선 진행](https://haneuls-blog.super.site/base64%eb%a5%bc-%ec%bb%ac%eb%9f%bc%ec%97%90-%eb%84%a3%ec%9c%bc%eb%a9%b4-%eb%b2%8c%ec%96%b4%ec%a7%80%eb%8a%94-%ec%9d%bc%eb%93%a4)
       - layout: top-left
         title: 기타 DevOps 업무
         description: |
          - 폐쇄망 내 Nexus 프라이빗 이미지 레지스트리 연동 및 배포 자동화 구축
-         - 사내 보안 강화를 위해 VPN 서버 구성 및 OPNsense 방화벽 설치 및 정책 설정
+         - 사내 보안 강화를 위해 [VPN 서버 구성](https://haneuls-blog.super.site/note/%ed%9a%8c%ec%82%ac%ea%b0%80-vpn%ec%9d%84-%ec%83%88%eb%a1%9c-%ea%b5%ac%ec%b6%95%ed%95%98%ea%b2%8c-%eb%90%9c-%ec%9d%b4%ec%9c%a0-feat-%ec%84%9c%ec%9a%b8%eb%b3%b4%ec%a6%9d) 및 OPNsense 방화벽 설치 및 정책 설정
          - Jenkins 기반 파이프라인 구성 및 CI/CD 운영 최적화
+  - title: Blog Posts
+    layout: list
+    content:
+    - layout: left
+      title: Backend
+      description: | # this will include new lines to allow paragraphs
+        [운영 효율성 강화를 위해 DB 마이그레이션 도구 도입 및 스키마 관리 자동화 체계 구축](https://www.notion.so/Flyway-2283d7c5e50c81b59d93f4350dcf6359)
   - title: Skill
     layout: list
     content:

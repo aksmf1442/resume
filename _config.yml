@@ -12,11 +12,11 @@ email: aksmf1442@gmail.com
 # email_title: Email (Email title override)
 phone: 010-4733-1720
 # phone_title: Phone (Phone title override)
-website: https://www.notion.so/Haneul-Note-2283d7c5e50c80eaa349c5fe11783bbe
+website: https://haneuls-blog.super.site/
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: never
 
 # Social links
 github_username:  aksmf1442
@@ -40,11 +40,9 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  성장에 대한 열정과 적극적인 문제 해결력을 바탕으로, 다양한 환경에서 실무 경험을 쌓아온 개발자입니다.
-  초기에는 개발 경험이 전무한 상태에서 시작했지만, <mark>빠른 학습력과 자기주도적 태도</mark>로 실무에 필요한 역량을 꾸준히 습득해왔습니다.
-  운영 자동화, 장애 대응, 모니터링 시스템 구축 등 <mark>서비스 신뢰성과 효율성 향상을 위한 개선에 집중</mark>해왔으며,
-  새로운 기술 도입과 팀 내 협업 체계 개선에도 적극적으로 기여하고 있습니다.
-  실제 경험을 바탕으로 팀원들과 지식과 노하우를 공유하며, 함께 성장하는 개발 문화를 만들어가는 데 힘쓰고 있습니다.
+  운영 자동화, 모니터링 통합, 인프라 전환 등 실무 중심의 성과를 보유한 백엔드 개발자입니다.
+  빠른 학습력과 문제 해결 중심 사고로 다양한 실서비스 환경에서 기술적 개선을 주도해왔습니다.
+  DevOps와 백엔드 개발의 경계를 넘나들며 생산성과 안정성 모두에 기여할 수 있습니다.
 content:
   - title: Experience
     layout: list
@@ -65,46 +63,34 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle
+      - layout: left
         title: Docker Compose 기반 단일 서버 환경을 Docker Swarm 기반 이중 서버 클러스터로 마이그레이션
-        # link: https://www.notion.so/Docker-Compose-Swarm-2283d7c5e50c8117b7b3cbcf29b6ee52
-        # link_text: 관련 블로그 LINK
         quote: >
           H2o Korea
         description: | # this will include new lines to allow paragraphs
-          - 서버 증설(1대 → 2대)에 맞춰 컨테이너 오케스트레이션 구조를 <mark>Docker Compose에서 Docker Swarm 클러스터로 전환</mark>하여, 서비스의 확장성과 고가용성을 확보
-          - Kubernetes와 Docker Swarm을 비교 분석하여, 제한된 서버 자원(2대) 환경에서 마스터/워커 역할 병행이 가능한 Docker Swarm을 선택함으로써 인프라 효율성 극대화
-          - 서비스 무중단 배포, 자동 복구, 배포 실패 시 롤백 등의 컨테이너 운영 환경 구축
-          - <mark>폐쇄망 환경</mark> 내에서 사설 이미지 레지스트리(Nexus) 연동 및 서비스 자동화 배포 체계 구현
-      - layout: top-middle
-        title: 모니터링 시스템 통합 및 알림 시스템 구축
-        # link: https://www.notion.so/2283d7c5e50c81698ea4df650fbc2569
-        # link_text: 관련 블로그 LINK
-        quote: >
-          H2o Korea
+          - 단일 서버 → K8S 클러스터 전환
+          - 서비스 무중단 배포, 컨테이너 자동 복구, 롤백 등 오케스트레이션 구조 설계 및 운영
+      - layout: left
+        title: 모니터링 시스템 통합 (LGTM 스택 도입)
         description: | # this will include new lines to allow paragraphs
-          - 레거시 환경에서 파일 기반 로그 관리, ELK 스택 등 <mark>여러 모니터링 시스템이 혼재되어 있던 구조</mark>를, LGTM 스택(Grafana/Prometheus/Loki/Tempo) 기반의 <mark>통합 모니터링 환경으로 전환</mark>하여 운영 효율성 및 가시성 향상
-          - 기존 파일 기반 로그 관리는 검색·분석이 어렵고, ELK 스택은 높은 리소스 소모와 운영 복잡성이 있어 경량화, 운영 편의성을 고려해 Grafana LGTM 스택(Grafana, Loki, Tempo, Prometheus) 선택
+          - 기존 파일 로그 + ELK 혼재 환경을 LGTM(Grafana, Loki, Tempo, Prometheus)으로 전환
+          - DB/Redis exporter, 서비스 로그, 분산 트레이싱 등 다양한 메트릭을 단일 대시보드에 통합
+          - CPU/디스크/에러코드 기반 이메일 알림 시스템 구축으로 대응 시간 단축
           - 서비스 로그, DB exporter, Redis exporter 등 다양한 메트릭과 로그를 수집·통합하여 한 대시보드에서 시스템 상태, 성능, 분산 트레이스까지 통합 모니터링 가능하도록 개선
           - 특정 지표(CPU, 디스크 용량, HTTP 500 에러 등) 기반 이메일 알림 시스템을 구축하여 장애 발생 시 신속한 대응이 가능하도록 자동화
           - 통합 모니터링 시스템 도입으로 운영 리소스 절감, 장애 대응 속도 및 서비스 신뢰성 향상
-      - layout: top-middle
-        title: DB 성능 개선 및 운영 효율 증대
-        quote: >
-          H2o Korea
+      - layout: left
+        title: 데이터베이스 운영 효율화
         description: |
-         - [특정 쿼리의 Fetch Time 지연 이슈를 분석하여 원인 파악 후 성능 개선](https://www.notion.so/Base64-2283d7c5e50c81f0b766d68e41241e08)
-         - [DB Master/Slave 간 동기화 지연 문제를 분석하여 구조 및 설정 개선](https://www.notion.so/MySQL-PK-2283d7c5e50c81c2a3dedb3bae88ac68)
-         - [운영 효율성 강화를 위해 DB 마이그레이션 도구 도입 및 스키마 관리 자동화 체계 구축](https://www.notion.so/Flyway-2283d7c5e50c81b59d93f4350dcf6359)
-      # - layout: top-middle
-      #   border: weak  # Value of `weak` will display a weak border below this item. # Any 
-      #                 # other value (or no value) means no border will be displayed
-      #   title: 호텔 통합 솔루션 개발
-      #   quote: >
-      #     H2o Korea
-      #   description: |
-      #    - 각 호텔의
-      #    - WebSocket을 활용한 실시간 체크인 처리
+         - 마이그레이션 도구 Flyway 도입, 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
+         - Master-Slave 간 replication delay 이슈 분석 및 구조 개선
+         - 느린 쿼리 Fetch Time 병목 분석 및 성능 개선 진행
+      - layout: left
+        title: 기타 DevOps 업무
+        description: |
+         - 폐쇄망 내 Nexus 프라이빗 이미지 레지스트리 연동 및 배포 자동화 구축
+         - 사내 보안 강화를 위해 VPN 서버 구성 및 OPNsense 방화벽 설치 및 정책 설정
+         - Jenkins 기반 파이프라인 구성 및 CI/CD 운영 최적화
   - title: Skill
     layout: list
     content:
@@ -129,11 +115,6 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: left
-        title: 코드스쿼드 부트캠프
-        caption: 2021.01~2021.04
-        description: | # this will include new lines to allow paragraphs
-          개발을 처음 시작한 후, 효과적인 개발 방향성을 설정하기 위해 참여
       - layout: left
         title: 동의대학교
         sub_title: e-비즈니스학과

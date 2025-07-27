@@ -101,13 +101,6 @@ content:
          - 폐쇄망 내 Nexus 프라이빗 이미지 레지스트리 연동 및 배포 자동화 구축
          - 사내 보안 강화를 위해 [VPN 서버 구성](https://haneuls-blog.super.site/note/%ed%9a%8c%ec%82%ac%ea%b0%80-vpn%ec%9d%84-%ec%83%88%eb%a1%9c-%ea%b5%ac%ec%b6%95%ed%95%98%ea%b2%8c-%eb%90%9c-%ec%9d%b4%ec%9c%a0-feat-%ec%84%9c%ec%9a%b8%eb%b3%b4%ec%a6%9d) 및 OPNsense 방화벽 설치 및 정책 설정
          - Jenkins 기반 파이프라인 구성 및 CI/CD 운영 최적화
-  - title: Blog Posts
-    layout: list
-    content:
-    - layout: left
-      title: Backend
-      description: | # this will include new lines to allow paragraphs
-        [운영 효율성 강화를 위해 DB 마이그레이션 도구 도입 및 스키마 관리 자동화 체계 구축](https://www.notion.so/Flyway-2283d7c5e50c81b59d93f4350dcf6359)
   - title: Skill
     layout: list
     content:

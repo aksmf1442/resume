@@ -67,17 +67,18 @@ content:
         quote: >
           <mark>H2O KOREA</mark>
       - layout: top-left
-        title: S-REGI 서비스
-        description: |
-         - 호텔 체크인 전 사용자 정보 수집 및 약관 동의용 백엔드 개발
-         - WebSocket 기반 실시간 통신 설계
-         - JWT 인증·권한 관리
-      - layout: top-left
         title: 호텔 통합 관리 서비스
         description: |
-         - 호텔별 상이한 체크인 절차를 유연하게 처리할 수 있도록 모듈 설계 및 확장
-         - 컨시어지, 룸클리닝, 스마트체크인, CRM 등 신규 서비스 초기 개발
-         - 메시지 발송 시 ActiveMQ 기반 <mark>이벤트 발송 구조 설계 및 개발</mark>
+         - 호텔별 상이한 체크인, 결제, 미니바 신청, 체크아웃 등 프로세스를 모듈형 워크플로우로 설계 → 유지보수성과 확장성 확보
+         - 스마트체크인·컨시어지·룸클리닝·CRM 등 <mark>신규 서비스 초기 설계·구현</mark> → 빠른 MVP 출시로 현업 피드백 수렴
+         - 체크인 완료, 주문 완료 등 이벤트 발생 시 ActiveMQ를 통해 발송 시스템과 비동기 연동 → 결합도 최소화
+      - layout: top-left
+        title: 도어락 키 발급 서비스
+        description: |
+         - Standalone 및 Network 도어락 키(핀코드, 모바일키, 카드키) 발급 서비스 개발
+         - Peak time(체크인 시간)에 <mark>2,000명 이상의 동시 접속 트래픽을 안정적으로 처리</mark>하도록 서버 부하를 효과적으로 분산 및 최적화
+         - 레거시 super 함수 호출 범위를 제한하고 쿼리 튜닝으로 3~5초 걸리던 <mark>쿼리 응답 시간을 약 70~80% 단축</mark>해 1초 이내로 성능 개선
+         - 웹소켓 통신을 활용해 Network 도어락의 실시간 제어 및 상태 갱신 기능 설계
       - layout: top-left
         title: Docker-Compose -> K8S 클러스터 전환
         description: | # this will include new lines to allow paragraphs

@@ -67,23 +67,24 @@ content:
         quote: >
           <mark>H2O KOREA</mark>
       - layout: top-left
-        title: 호텔 통합 관리 서비스
+        title: 호텔 운영 워크플로우 모듈화 및 서비스 설계
         description: |
          - 호텔별 상이한 체크인, 결제, 미니바 신청, 체크아웃 등 프로세스를 모듈형 워크플로우로 설계하여 유지보수성과 확장성 확보
          - 스마트체크인·컨시어지·룸클리닝·CRM 등 <mark>신규 서비스 초기 설계·구현</mark>하여 빠른 MVP 출시로 현업 피드백 수렴
          - 체크인 완료, 주문 완료 등 이벤트 발생 시 ActiveMQ를 통해 발송 시스템과 비동기 연동을 통해 결합도 최소화
       - layout: top-left
-        title: 도어락 키 발급 서비스
+        title: 도어락 키 발급 시스템 성능 개선 및 실시간 제어 설계
         description: |
          - Standalone 및 Network 도어락 키(핀코드, 모바일키, 카드키) 발급 서비스 개발
          - Peak time(체크인 시간)에 <mark>2,000명 이상의 동시 접속 트래픽을 안정적으로 처리</mark>하도록 서버 부하를 효과적으로 분산 및 최적화
-         - 레거시 super API를 분리하고, 쿼리 튜닝으로 4~6초 걸리던 <mark>쿼리 응답 시간을 약 70~80% 단축</mark>해 1초 이내로 성능 개선
+         - 레거시 super API를 분리하고, 쿼리 튜닝으로 4~6초 걸리<mark>쿼리 응답 시간을 약 70~80% 단축</mark>해 1초 이내로 성능 개선
          - 웹소켓 통신을 활용해 Network 도어락의 실시간 제어 및 상태 갱신 기능 설계
       - layout: top-left
-        title: Docker-Compose -> K8S 클러스터 전환
-        description: | # this will include new lines to allow paragraphs
-          - Docker-Compose 기반 설계에서 K8S 클러스터로 마이그레이션
-          - 서비스 무중단 배포, 컨테이너 자동 복구, 롤백 등 오케스트레이션 구조 설계 및 운영
+        title: 데이터베이스 운영 효율화
+        description: |
+         - 마이그레이션 도구 [Flyway 도입](https://haneuls-blog.super.site/%ea%b0%9c%eb%b0%9c-%ec%a1%b0%ec%a7%81%ec%97%90-flyway%eb%a5%bc-%ec%99%9c-%eb%8f%84%ec%9e%85%ed%95%98%ea%b2%8c-%eb%90%98%ec%97%88%ec%9d%84%ea%b9%8c), 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
+         - Master-Slave 간 replication [delay 이슈 분석 및 구조 개선](https://haneuls-blog.super.site/db-masterslave-%ea%b0%84-%eb%8f%99%ea%b8%b0%ed%99%94-%ec%a7%80%ec%97%b0-%ec%9d%b4%ec%8a%88)
+         - [느린 쿼리 Fetch Time 병목 분석 및 성능 개선 진행](https://haneuls-blog.super.site/base64%eb%a5%bc-%ec%bb%ac%eb%9f%bc%ec%97%90-%eb%84%a3%ec%9c%bc%eb%a9%b4-%eb%b2%8c%ec%96%b4%ec%a7%80%eb%8a%94-%ec%9d%bc%eb%93%a4)
       - layout: top-left
         title: 모니터링 시스템 통합 (LGTM 스택 도입)
         description: | # this will include new lines to allow paragraphs
@@ -91,11 +92,10 @@ content:
           - DB/Redis exporter, 서비스 로그, 분산 트레이싱 등 다양한 메트릭을 단일 대시보드에 통합
           - CPU/디스크/에러코드 기반 이메일 알림 시스템 구축으로 <mark>대응 시간 30% 단축</mark>
       - layout: top-left
-        title: 데이터베이스 운영 효율화
-        description: |
-         - 마이그레이션 도구 [Flyway 도입](https://haneuls-blog.super.site/%ea%b0%9c%eb%b0%9c-%ec%a1%b0%ec%a7%81%ec%97%90-flyway%eb%a5%bc-%ec%99%9c-%eb%8f%84%ec%9e%85%ed%95%98%ea%b2%8c-%eb%90%98%ec%97%88%ec%9d%84%ea%b9%8c), 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
-         - Master-Slave 간 replication [delay 이슈 분석 및 구조 개선](https://haneuls-blog.super.site/db-masterslave-%ea%b0%84-%eb%8f%99%ea%b8%b0%ed%99%94-%ec%a7%80%ec%97%b0-%ec%9d%b4%ec%8a%88)
-         - [느린 쿼리 Fetch Time 병목 분석 및 성능 개선 진행](https://haneuls-blog.super.site/base64%eb%a5%bc-%ec%bb%ac%eb%9f%bc%ec%97%90-%eb%84%a3%ec%9c%bc%eb%a9%b4-%eb%b2%8c%ec%96%b4%ec%a7%80%eb%8a%94-%ec%9d%bc%eb%93%a4)
+        title: Docker-Compose -> K8S 클러스터 전환
+        description: | # this will include new lines to allow paragraphs
+          - Docker-Compose 기반 설계에서 K8S 클러스터로 마이그레이션
+          - 서비스 무중단 배포, 컨테이너 자동 복구, 롤백 등 오케스트레이션 구조 설계 및 운영
       - layout: top-left
         title: 기타 DevOps 업무
         description: |

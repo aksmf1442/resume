@@ -66,7 +66,7 @@ content:
       - layout: top-left
         quote: >
           <mark>H2O KOREA</mark>
-      - layout: top-left
+      - layout: top-middle
         title: 호텔 체크인·컨시어지·멤버십 서비스 및 어드민 플랫폼
         description: |
          - AWS EKS 기반의 <mark>초기사용 개발 인프라를 구축</mark>하고, 네트워크·보안·노드 구성 및 배포 파이프라인 연동을 담당하여 안정적인 컨테이너 운영 환경을 확보
@@ -84,7 +84,7 @@ content:
               - DB/Redis exporter와 서비스 로그, <mark>Tempo 트레이싱 도입</mark>으로 상세 지표 확보
               - CPU·디스크 사용량, 에러 코드 등 주요 지표 기반 Google Chat <mark>알림 시스템 구축</mark>
 
-      - layout: top-left
+      - layout: top-middle
         title: 	도어락 제어 및 키 발급 서비스 유지 보수 및 운영
         description: |
          - 도어락 제어 및 키 발급 서비스 유지 보수 및 운영

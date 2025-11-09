@@ -69,6 +69,8 @@ content:
       - layout: top-middle
         title: 호텔 체크인·컨시어지·멤버십 서비스 및 어드민 플랫폼
         description: |
+
+        
          - AWS EKS 기반의 <mark>초기사용 개발 인프라를 구축</mark>하고, 네트워크·보안·노드 구성 및 배포 파이프라인 연동을 담당하여 안정적인 컨테이너 운영 환경을 확보
          - 온프레미스 소규모 서버 환경에서 <mark>Docker Swarm 도입</mark> 운영 프로세스를 회사 표준으로 장착
          - 스마트체크인, 컨시어지 등 주요 상품의 초기 MVP 개발부터 최종 납품까지 전 과정 참여
@@ -87,6 +89,8 @@ content:
       - layout: top-middle
         title: 	도어락 제어 및 키 발급 서비스 유지 보수 및 운영
         description: |
+
+
          - 도어락 제어 및 키 발급 서비스 유지 보수 및 운영
           - 서비스 운영
             - 성능 개선

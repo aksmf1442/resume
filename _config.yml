@@ -40,9 +40,8 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/ㅁㄴㅇㄹ.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  - 운영 자동화, 모니터링 통합, 인프라 전환 등 실무 중심의 성과를 보유한 백엔드 개발자입니다.
-  - <mark>빠른 학습력과 문제 해결 중심 사고</mark>로 다양한 실서비스 환경에서 기술적 개선을 주도해왔습니다.
-  - DevOps와 백엔드 개발의 경계를 넘나들며 <mark>생산성과 안정성 모두에 기여</mark>할 수 있습니다.
+  - 약 2년간 호텔 솔루션 회사에서 Java/Spring 기반 백엔드 개발과 DevOps 업무를 수행하며, 운영 자동화, 모니터링 통합, 인프라 전환 등 다양한 프로젝트를 통해 <mark>서비스 안정성과 생산성을 향상</mark>시켰습니다.
+  - 이 과정에서 <mark>빠른 학습력과 문제 해결 능력</mark>을 바탕으로 짧은 기간 내 기능을 완성하거나 성능을 대폭 개선하는 등 실질적인 성과를 만들어왔으며, 이러한 경험은 백엔드 개발뿐 아니라 DevOps 전반에 걸쳐 더 나은 서비스 운영과 개발 문화를 만들어가는 데 기여하고 있습니다.
 content:
   - title: Experience
     layout: list
@@ -60,7 +59,7 @@ content:
           - 인프라 구축 및 운영 관리
           - DB 성능 튜닝 및 장애 대응
           - 데이터베이스 마이그레이션 도구를 도입하여 팀 내 스키마 관리 및 배포 프로세스를 개선
-          - 배포 프로세스 자동화로 팀의 업무 생산성 개선
+          - 자동화로 팀의 업무 생산성 개선
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -68,41 +67,31 @@ content:
         quote: >
           <mark>H2O KOREA</mark>
       - layout: top-left
-        title: 호텔 서비스 워크플로우 설계
+        title: 호텔 체크인·컨시어지·멤버십 서비스 및 어드민 플랫폼
         description: |
-         - 호텔별 상이한 체크인, 결제, 미니바 신청, 체크아웃 등 프로세스를 모듈형 워크플로우로 설계하여 유지보수성과 확장성 확보
-         - 스마트체크인·컨시어지·룸클리닝·CRM 등 <mark>신규 서비스 초기 설계·구현</mark>하여 빠른 MVP 출시로 현업 피드백 수렴
-         - 체크인 완료, 주문 완료 등 이벤트 발생 시 ActiveMQ를 통해 발송 시스템과 비동기 연동을 통해 결합도 최소화
+         - AWS EKS 기반의 <mark>초기사용 개발 인프라를 구축</mark>하고, <mark>네트워크·보안·노드 구성 및 배포 파이프라인 연동을 담당</mark>하여 안정적인 컨테이너 운영 환경을 확보
+         - <mark>온프레미스 소규모 서버 환경에서 Docker Swarm 도입</mark>, 운영 프로세스를 회사 표준으로 장착
+         - 스마트체크인, 컨시어지 등 주요 상품의 초기 MVP 개발부터 최종 납품까지 전 과정 참여
+         - <mark>메시지 큐 도입</mark>을 통해 어드민·체크인·컨시어지 등 <mark>서비스 간 결합도를 대폭 감소</mark>시키는 구조로 재설계
+         - <mark>Jira 티켓과 GitLab 작업 흐름을 자동화</mark>하여 개발 이력 관리 최적화
+         - [Flyway 도입을 통해 수동 DB 배포를 자동화된 스키마 관리 체계로 전환](https://haneul-blog.vercel.app/add-flyway)
+         - <mark>서비스 운영</mark>
+          - <mark>성능 개선</mark>
+            - [Master-Slave 간 replication delay 문제를 분석하고 구조 개선](https://haneul-blog.vercel.app/db-replication-error)
+            - [느린 쿼리의 Fetch Time 병목 구간을 분석하고 성능 최적화 진행](https://haneul-blog.vercel.app/oh-my-god-base64)
+          - <mark>모니터링 및 로깅 시스템 구축 및 개선</mark>
+            - 서비스 운영 효율화를 위해 <mark>Grafana, Loki, Prometheus 기반 모니터링·로깅 시스템 구축</mark> 및 개선
+            - DB/Redis exporter와 서비스 로그, <mark>Tempo 트레이싱 도입</mark>으로 상세 지표 확보
+            - CPU·디스크 사용량, 에러 코드 등 <mark>주요 지표 기반 Google Chat 알림 시스템 구축</mark>
+
       - layout: top-left
-        title: 	도어락 실시간 제어 및 최적화
+        title: 	도어락 제어 및 키 발급 서비스 유지 보수 및 운영
         description: |
-         - Standalone 및 Network 도어락 키(핀코드, 모바일키, 카드키) 발급 서비스 개발
-         - Peak time(체크인 시간)에 <mark>2,000명 이상의 동시 접속 트래픽을 안정적으로 처리</mark>하도록 서버 부하를 효과적으로 분산 및 최적화
-         - 레거시 super API를 분리하고, 쿼리 튜닝으로 4~6초 걸리던 <mark>쿼리의 응답 시간을 약 70~80% 단축</mark>해 1초 이내로 성능 개선
-         - 웹소켓 통신을 활용해 Network 도어락의 실시간 제어 및 상태 갱신 기능 설계
-      - layout: top-left
-        title: 데이터베이스 운영 효율화
-        description: |
-         - 마이그레이션 도구 [Flyway 도입](https://haneul-blog.vercel.app/add-flyway), 수동 쿼리 배포 방식 → 자동화된 스키마 관리 체계로 개선
-         - Master-Slave 간 replication [delay 이슈 분석 및 구조 개선](https://haneul-blog.vercel.app/db-replication-error)
-         - [느린 쿼리 Fetch Time 병목 분석 및 성능 개선 진행](https://haneul-blog.vercel.app/oh-my-god-base64)
-      - layout: top-left
-        title: 모니터링 시스템 통합 (LGTM 스택 도입)
-        description: | # this will include new lines to allow paragraphs
-          - 기존 파일 로그 + ELK 혼재 환경을 LGTM(Grafana, Loki, Tempo, Prometheus)으로 전환
-          - DB/Redis exporter, 서비스 로그, 분산 트레이싱 등 다양한 메트릭을 단일 대시보드에 통합
-          - CPU/디스크/에러코드 기반 이메일 알림 시스템 구축으로 <mark>대응 시간 30% 단축</mark>
-      - layout: top-left
-        title: Docker-Compose -> K8S 클러스터 전환
-        description: | # this will include new lines to allow paragraphs
-          - Docker-Compose 기반 설계에서 K8S 클러스터로 마이그레이션
-          - 서비스 무중단 배포, 컨테이너 자동 복구, 롤백 등 오케스트레이션 구조 설계 및 운영
-      - layout: top-left
-        title: 기타 DevOps 업무
-        description: |
-         - 폐쇄망 내 Nexus 프라이빗 이미지 레지스트리 연동 및 배포 자동화 구축
-         - 사내 보안 강화를 위해 [VPN 서버 구성](https://haneul-blog.vercel.app/company-vpn) 및 OPNsense 방화벽 설치 및 정책 설정
-         - Jenkins 기반 파이프라인 구성 및 CI/CD 운영 최적화
+         - <mark>서비스 운영</mark>
+          - <mark>성능 개선</mark>
+            - <mark>Redis 캐싱과 DB 쿼리 최적화</mark>를 통해 예약량 증가에 따른 서비스 지연 문제 개선, <mark>응답 속도 4~6초 → 1초 이하로 단축 및 조회 성능 향상</mark>
+          - <mark>CS 대응</mark>
+            - 고객사 요청 대응, 장애 해결, 운영 배포 등 서비스 운영 과정 전반 책임 수행
   - title: Skill
     layout: list
     content:
@@ -111,19 +100,19 @@ content:
       description: | # this will include new lines to allow paragraphs
         * Java
         * Spring Boot, Spring MVC, Spring Batch
+        * Node.js, Express.js
         * JPA, Querydsl
         * Junit4/5, Mockito
         * Gradle
     - layout: left
       title: DevOps
       description: | # this will include new lines to allow paragraphs
-        * MySQL, MariaDB
-        * Jenkins
-        * AWS EKS, S3, EC2, Route53
-        * DockerSwarm, K8S
-        * Nginx
-        * Grafana, Prometheus, Loki, Tempo
-        * Ubuntu
+        * <mark>Database:</mark> MySQL, MariaDB
+        * <mark>Container & Orchestration:</mark> Docker, docker-compose, Kubernetes (EKS), Docker Swarm
+        * <mark>Web Server / Proxy:</mark> Nginx
+        * <mark>Cloud (AWS):</mark> EC2, ALB/NLB, S3, CloudFront, Route 53, CloudWatch, EventBridge, IAM, Site-To-Site VPN
+        * <mark>CI/CD:</mark> Jenkins
+        * <mark>Message Broker:</mark> ActiveMQ
   - title: Education
     layout: list
     content:

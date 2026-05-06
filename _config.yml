@@ -12,7 +12,7 @@ email: aksmf1442@gmail.com
 # email_title: Email (Email title override)
 phone: 010-4733-1720
 # phone_title: Phone (Phone title override)
-website: https://haneul-blog.vercel.app
+website: https://haneul-repository.tistory.com
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
@@ -40,7 +40,7 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/ㅁㄴㅇㄹ.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  - 약 2년간 호텔 솔루션 회사에서 Java/Spring 기반 백엔드 개발과 DevOps 업무를 수행하며, 운영 자동화, 모니터링 통합, 인프라 전환 등 다양한 프로젝트를 통해 <mark>서비스 안정성과 생산성을 향상</mark>시켰습니다.
+  - 약 3년간 호텔 솔루션 회사에서 Java/Spring 기반 백엔드 개발과 DevOps 업무를 수행하며, 운영 자동화, 모니터링 통합, 인프라 전환 등 다양한 프로젝트를 통해 <mark>서비스 안정성과 생산성을 향상</mark>시켰습니다.
   - 이 과정에서 <mark>빠른 학습력과 문제 해결 능력</mark>을 바탕으로 짧은 기간 내 기능을 완성하거나 성능을 대폭 개선하는 등 실질적인 성과를 만들어왔으며, 이러한 경험은 백엔드 개발뿐 아니라 DevOps 전반에 걸쳐 더 나은 서비스 운영과 개발 문화를 만들어가는 데 기여하고 있습니다.
 content:
   - title: Experience
@@ -67,20 +67,19 @@ content:
         quote: >
           <mark>H2O KOREA</mark>
       - layout: top-middle
-        title: 호텔 체크인·컨시어지·멤버십 서비스 및 어드민 플랫폼
+        title: 호텔 체크인·멤버십 서비스 및 어드민 플랫폼
         description: |
          <br>
          <br>
          - AWS EKS 기반의 <mark>초기사용 개발 인프라를 구축</mark>하고, 네트워크·보안·노드 구성 및 배포 파이프라인 연동을 담당하여 안정적인 컨테이너 운영 환경을 확보
-         - 온프레미스 소규모 서버 환경에서 <mark>Docker Swarm 도입</mark> 운영 프로세스를 회사 표준으로 장착
-         - 스마트체크인, 컨시어지 등 주요 상품의 초기 MVP 개발부터 최종 납품까지 전 과정 참여
-         - 메시지 큐 도입을 통해 어드민·체크인·컨시어지 등 <mark>서비스 간 결합도를 대폭 감소</mark>시키는 구조로 재설계
-         - <mark>Jira 티켓과 GitLab 작업 흐름을 자동화</mark>하여 개발 이력 관리 최적화
-         - [Flyway 도입을 통해 수동 DB 배포를 자동화된 스키마 관리 체계로 전환](https://haneul-blog.vercel.app/add-flyway)
+         - 온프레미스 소규모 서버(1~2대) 환경에서 <mark>Docker Swarm 도입</mark> 운영 프로세스를 회사 표준으로 장착
+         - 스마트체크인 등 주요 상품의 초기 MVP 개발부터 최종 납품까지 전 과정 참여
+         - UAE 정부와 계약한 <mark>스마트체크인 서비스</mark>의 체크인 비즈니스 로직 전반을 개발하고, 현재 1개 호텔 운영을 시작으로 UAE 전체 호텔 단계적 도입을 진행
+         - [Flyway 도입을 통해 수동 DB 배포를 자동화된 스키마 관리 체계로 전환](https://haneul-repository.tistory.com/3)
           - 서비스 운영
             - 성능 개선
-              - [Master-Slave 간 replication delay 문제를 분석하고 구조 개선](https://haneul-blog.vercel.app/db-replication-error)
-              - [느린 쿼리의 Fetch Time 병목 구간을 분석하고 성능 최적화 진행](https://haneul-blog.vercel.app/oh-my-god-base64)
+              - [Master-Slave 간 replication delay 문제를 분석하고 구조 개선](https://haneul-repository.tistory.com/4)
+              - [느린 쿼리의 Fetch Time 병목 구간을 분석하고 성능 최적화 진행](https://haneul-repository.tistory.com/5)
             - 모니터링 및 로깅 시스템 구축 및 개선
               - 서비스 운영 효율화를 위해 Grafana, Loki, Prometheus 기반 <mark>모니터링·로깅 시스템 구축</mark> 및 개선
               - DB/Redis exporter와 서비스 로그, <mark>Tempo 트레이싱 도입</mark>으로 상세 지표 확보
